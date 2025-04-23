@@ -1,0 +1,90 @@
+/* --- Modal de Reglas --- */
+#modal-reglas.oculto {
+    display: none;
+}
+  
+#modal-reglas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+  
+.contenido-modal {
+    background: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+  
+.contenido-modal h2 {
+    margin-top: 0;
+}
+  
+.contenido-modal ul {
+    padding-left: 1.2rem;
+}
+
+/* --- Botón "Mostrar reglas" (actualizado) --- */
+#mostrar-reglas {
+    padding: 16px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1fa4ad, #41bd35);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+  
+#mostrar-reglas::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+  
+#mostrar-reglas:hover::after {
+    left: 100%;
+}
+  
+#mostrar-reglas:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #41bd35, #1fa4ad);
+}
+
+/* --- Botón para cerrar el modal de reglas --- */
+#cerrar-modal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #a62fc2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+#cerrar-modal:hover {
+    background-color: #8619a5;
+}

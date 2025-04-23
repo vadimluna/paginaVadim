@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #5c0254; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.gradiente {
+  background: linear-gradient(90deg, #ffb347, #ff5e62, #ff66c4, #b19cd9, #00e0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+#opciones button {
+  padding: 20px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #6a0dad;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+#opciones button:hover {
+  background-color: #ffdaff;
+  transform: scale(1.1);
+}
+
+#resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circulo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#vs {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e01313;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#info {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin-inline: auto;
+  line-height: 1.8;
+  color: #ffdaff;
+}
+
+#info p {
+  margin: 12px 0;
+  font-weight: 400;
+}
+
+#info span {
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#info p::before {
+  content: "🔹 ";
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+#texto-resultado {
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+
+.mensaje-final {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #6a0dad;
+  padding: 30px 50px;
+  font-size: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reglas.css">
+  <link rel="stylesheet" href="rondas.css">
+</head>
+<body>
+  <h1><span class="gradiente">Piedra, Papel, Tijera, Lagarto, Spock de Vadim</span> 🤠</h1>
+
+  <div id="opciones">
+    <button data-eleccion="piedra">🪨 Piedra</button>
+    <button data-eleccion="papel">📄 Papel</button>
+    <button data-eleccion="tijera">✂️ Tijera</button>
+    <button data-eleccion="lagarto">🦎 Lagarto</button>
+    <button data-eleccion="spock">🖖 Spock</button>
+  </div>
+
+  <div id="resultado">
+    <div class="persona">
+      <h2>Jugador</h2>
+      <div class="circulo" id="eleccion-jugador">-</div>
+    </div>
+    <div id="vs">VS</div>
+    <div class="persona">
+      <h2>Máquina</h2>
+      <div class="circulo" id="eleccion-ia">-</div>
+    </div>
+  </div>
+  
+  <div id="info">
+    <p><strong>Resultado:</strong> <span id="texto-resultado"></span></p>
+    <p><strong>Rondas jugadas:</strong> <span id="contador"></span></p>
+    <p><strong>Marcador</strong> - <strong>Jugador:</strong> <span id="puntos-jugador"></span> | <strong>Máquina:</strong> <span id="puntos-ia"></span></p>
+  </div>
+
+  <div id="botones-superiores">
+    <button id="mostrar-reglas" class="boton-config">📜 Ver reglas del juego</button>
+    <button id="btn-configurar-rondas" class="boton-config">🎯 Elegir rondas</button>
+  </div>
+
+  <div id="modal-reglas" class="oculto">
+    <div class="contenido-modal">
+      <h2>Reglas del juego</h2>
+      <ul>
+        <li>✂️ Tijera corta 📄 Papel</li>
+        <li>📄 Papel cubre 🪨 Piedra</li>
+        <li>🪨 Piedra aplasta 🦎 Lagarto</li>
+        <li>🦎 Lagarto envenena 🖖 Spock</li>
+        <li>🖖 Spock rompe ✂️ Tijera</li>
+        <li>✂️ Tijera decapita 🦎 Lagarto</li>
+        <li>🦎 Lagarto devora 📄 Papel</li>
+        <li>📄 Papel refuta 🖖 Spock</li>
+        <li>🖖 Spock vaporiza 🪨 Piedra</li>
+        <li>🪨 Piedra aplasta ✂️ Tijera</li>
+      </ul>
+      <p><strong>⚠️ El juego se juega hasta que un jugador llegue a 10 puntos! Si quieres cambiar la cantidad de rondas, pincha el boton "Elegir rondas".</strong></p>
+      <button id="cerrar-modal">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="modal-rondas" class="oculto">
+    <div class="contenido-modal">
+      <h2>Elige la cantidad de rondas</h2>
+      <input type="number" id="input-rondas" min="1" placeholder="Número de rondas">
+      <button id="confirmar-rondas">Confirmar</button>
+      <button id="cerrar-rondas">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
