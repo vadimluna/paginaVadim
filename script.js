@@ -138,7 +138,7 @@ botones.forEach(boton => {
       // Bloquear botones durante el mensaje
       botones.forEach(btn => btn.disabled = true);
 
-      // Después de 3s, parar música, desbloquear y reiniciar
+      // Después de 3s, parar música, desbloquear y reiniciar.
       setTimeout(() => {
         musica.pause();
         musica.currentTime = 0;
