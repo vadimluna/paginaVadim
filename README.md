@@ -1,2 +1,4 @@
 # paginaVadim
-Pagina web con el juego
+Pagina web con el juego dentro( Piedra,papel,tijeras,lagarto y spock)
+
+Pa ver todos lso codigos, elige el master
